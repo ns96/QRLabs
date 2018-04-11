@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="QRLabs v0.11 (04/09/2018)" >
+  <component type="Tabs" name="Tabs" cloudDestinationProperty="Tabs" >
+    <layoutConstraint value="Center" />
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>Chem I</str>
+      <str>Data List</str>
+    </custom>
+    <component type="Container" name="Container" tabTitle="Chem I" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="List" name="chemIList" cloudDestinationProperty="List" >
+        <layoutConstraint value="Center" />
+        <stringItem value="Scientific Notation" />
+        <stringItem value="Density" />
+        <stringItem value="Seperation of Salt and Sand" />
+        <stringItem value="Salt water Analysis &amp; Solubility of KNO3" />
+        <stringItem value="Specific Heat of a Metal" />
+        <stringItem value="Analysis of a Hydrate" />
+      </component>
+    </component>
+    <component type="Container" name="Container1" tabTitle="Data List" cloudDestinationProperty="Container1" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Container" name="Container2" cloudDestinationProperty="Container2" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+        <layoutConstraint value="South" />
+        <component type="Button" name="loadDataButton" cloudDestinationProperty="loadDataButton" text="Load" >
+        </component>
+        <component type="Button" name="deleteDataButton" cloudDestinationProperty="deleteDataButton" text="Delete" >
+        </component>
+        <component type="CheckBox" name="allCheckBox" cloudDestinationProperty="allCheckBox" text="All" >
+        </component>
+      </component>
+      <component type="Container" name="dataContainer" cloudDestinationProperty="dataContainer" scrollableX="false" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+  </component>
+</component>

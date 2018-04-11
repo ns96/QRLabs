@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ExperimentForm" cloudDestinationProperty="ExperimentForm" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Experiment: nnn" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+    <layoutConstraint value="South" />
+    <component type="Button" name="scanButton" cloudDestinationProperty="Button1" text="Scan" >
+    </component>
+    <component type="Button" name="storeButton" cloudDestinationProperty="storeButton" enabled="true" text="Create QRCode" >
+    </component>
+    <component type="ShareButton" name="shareButton" cloudDestinationProperty="shareButton" text="Share Data" >
+    </component>
+  </component>
+  <component type="Container" name="inputContainer" cloudDestinationProperty="inputContainer" scrollableX="false" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+    <layoutConstraint value="Center" />
+  </component>
+</component>
